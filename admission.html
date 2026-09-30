@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admission Form - VGI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-box">
+        <h2>Vaishnavi College Admission Form 2026</h2>
+        <form onsubmit="return submitForm()">
+            <label>Pura Naam</label>
+            <input type="text" id="name" required>
+            
+            <label>Pita Ka Naam</label>
+            <input type="text" id="fname" required>
+            
+            <label>Age</label>
+            <input type="number" id="age" required>
+            
+            <label>City</label>
+            <input type="text" id="city" placeholder="Ex: Bhopal" required>
+            
+            <label>12th Percentage</label>
+            <input type="number" id="marks" required>
+            
+            <label>Course Select Karo</label>
+            <select id="course" required>
+                <option value="">-- Chuno --</option>
+                <option value="35000">BCA - 35,000/yr</option>
+                <option value="28000">BSc - 28,000/yr</option>
+                <option value="22000">BCom - 22,000/yr</option>
+                <option value="32000">BBA - 32,000/yr</option>
+            </select>
+            
+            <button type="submit" class="big-btn">Submit Form</button>
+        </form>
+        <h3 id="result"></h3>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
